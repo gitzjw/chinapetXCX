@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/shop/shop",
+    "pages/good/good",
+     "pages/publish/index",
+    "pages/detail/detail",
+    "pages/activity/activity",
+    "pages/forumNew/forumNew",
+    "pages/forumList/forumList",
+    "pages/settlement/index",
+    "pages/address/index",
+    "pages/addressList/index",
+    "pages/member/member",
+    "pages/mythreadNew/mythreadNew",
+    "pages/index/index",
+    "pages/logs/logs"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#999",
+    "navigationBarTitleText": "浏览版",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "iconPath":"image/ing.png",
+      "selectedIconPath":"image/ing-active.png",
+      "text": "宠物中国"
+    }, {
+      "pagePath": "pages/forumNew/forumNew",
+      "iconPath":"image/圈子.png",
+      "selectedIconPath":"image/圈子1.png",
+      "text": "圈子"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "iconPath":"image/wode1.png",
+      "selectedIconPath":"image/wode.png",
+      "text": "个人中心"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

@@ -1,0 +1,13 @@
+@import "../../wxParse/wxParse.wxss";
+.name{
+    padding: 10px;
+}
+.price{
+    margin: 10px;
+    color: yellowgreen;
+    font-size: 14px;
+}
+.sales{
+    margin: 10px;
+    font-size: 12px;
+}

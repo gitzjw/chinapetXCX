@@ -1,0 +1,8 @@
+
+<form bindsubmit="formSubmit" >
+    <input class="section" name="consignee" value="{{Address.consignee}}" placeholder="收货人" />
+     <input class="section"  name="mobile" type="digit" value="{{Address.mobile}}"  placeholder="手机号"/>
+      <input class="section"  name="address" value="{{Address.address}}" placeholder="详细地址"/>
+      <text class="text">请填写正确地址，以免收不到货。</text>>
+       <button formType="submit">保存</button>
+</form>

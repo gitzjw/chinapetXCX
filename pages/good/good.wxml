@@ -1,0 +1,21 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view wx:if="{{status == 200}}">
+  <view>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="width:{{windowWidth}}px;height:{{windowWidth}}px">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" style="width:{{windowWidth}}px;height:{{windowWidth}}px" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="name"><text>{{good.goods_name}}</text></view>
+  <view class="price">价格：￥{{good.shop_price}}</view>
+  <view class="sales">销量：{{good.virtual_sales}}</view>
+  <view class="sales">库存：{{good.goods_number}}</view>
+  <import src="wxParse.wxml" />
+  <view class="wxParse">
+    <template is="wxParse" data="{{wxParseData:desc.nodes}}" />
+  </view>
+</view>
+<view wx:else> 无响应 </view>
